@@ -127,6 +127,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7655324653996296180}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &505806345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5987836783569786424, guid: 41868fc40a959014f8266e4b112f023a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7138621600409871989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &505806349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505806345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b552800ece41b4c46be2ae3d8734f176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &532921233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -327,7 +345,7 @@ PrefabInstance:
     - target: {fileID: 8228676747558919372, guid: fc8c49d4bc19c424cbe81002f2773656,
         type: 3}
       propertyPath: Mute
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8c49d4bc19c424cbe81002f2773656, type: 3}
@@ -604,7 +622,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1883785265 stripped
 Transform:
@@ -964,10 +982,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2665651635288205443, guid: 41868fc40a959014f8266e4b112f023a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056050974745476373, guid: 41868fc40a959014f8266e4b112f023a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9e5c63ca2020b874399e7e2dea6fb1b5, type: 2}
     - target: {fileID: 7138621601254247288, guid: 41868fc40a959014f8266e4b112f023a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7138621601254247288, guid: 41868fc40a959014f8266e4b112f023a,
         type: 3}
@@ -1199,6 +1227,16 @@ PrefabInstance:
         type: 3}
       propertyPath: PowerUps.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655324653997863326, guid: d571be1ae4ae8f742898ce8de0ee53af,
+        type: 3}
+      propertyPath: delayBeforeSpawning
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655324653997863326, guid: d571be1ae4ae8f742898ce8de0ee53af,
+        type: 3}
+      propertyPath: timeBetweenSpawning
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7655324653997863326, guid: d571be1ae4ae8f742898ce8de0ee53af,
         type: 3}

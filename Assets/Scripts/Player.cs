@@ -84,7 +84,7 @@ public class Player : MonoBehaviour
 
     private void Firing()
     {
-        GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
+        GameObject laser = Instantiate(laserPrefab, transform.position + (transform.forward * 2), Quaternion.identity) as GameObject;
         laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
     }
 
@@ -140,7 +140,7 @@ public class Player : MonoBehaviour
         else if (other.CompareTag("Invincibility"))
         {
             SetInvincibility();
-            Invoke("SetInvicibility", other.GetComponent<Invincibility>().GetBuff());
+            Invoke("SetInvincibility", other.GetComponent<Invincibility>().GetBuff());
             Destroy(other.gameObject);
         }
     }

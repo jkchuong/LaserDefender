@@ -8,6 +8,11 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] float delayInSeconds = 2f;
 
+    private void Awake()
+    {
+        Screen.SetResolution(567, 1008, false);
+    }
+
     public void Quit()
     {
         Application.Quit();
